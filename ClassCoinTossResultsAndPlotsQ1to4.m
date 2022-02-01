@@ -18,21 +18,21 @@ Q2 = [ 13 13 13 13]; Q2seq = [ 'HH', 'HT', 'TH', 'TT'];
 Q3 = [ 4 10 6 7 8 4 10 3 ]; Q3seq = [ 'HHH', 'HHT', 'HTH', 'HTT', 'THH', 'THT', 'TTH', 'TTT'];
 Q4 = [ 1 6 16 20 8 1];
 
-figure % Q1-3 - raw data counts
-subplot(3,1,1), stem([1,0],Q1)
-xlabel('Heads = 1, Tails = 0'), ylabel('Counts'), title('Q1 Results by Counts')
-subplot(3,1,2), stem(3:-1:0,Q2)
-xlabel('HH=3, HT=2, TH=1, TT=0'), ylabel('Counts'), title('Q2 Results by Counts')
-subplot(3,1,3), stem(7:-1:0,Q3)
-xlabel('HHH=7, ... TTT=0'), ylabel('Counts'), title('Q3 Results by Counts')
-
-figure % Q1-3 - counts of relative frequency estimated probabilities of outcomes
-subplot(3,1,1), stem([1,0],Q1/NumT)
-xlabel('Heads = 1, Tails = 0'), ylabel('Est. Prob'), title('Q1 Results by Relative Frequency Probabilities')
-subplot(3,1,2), stem(3:-1:0,Q2/NumT)
-xlabel('HH=3, HT=2, TH=1, TT=0'), ylabel('Est. Prob'), title('Q2 Results by Relative Frequency Probabilities')
-subplot(3,1,3), stem(7:-1:0,Q3/NumT)
-xlabel('HHH=7, ... TTT=0'), ylabel('Est. Prob'), title('Q3 Results by Relative Frequency Probabilities')
+% figure % Q1-3 - raw data counts
+% subplot(3,1,1), stem([1,0],Q1)
+% xlabel('Heads = 1, Tails = 0'), ylabel('Counts'), title('Q1 Results by Counts')
+% subplot(3,1,2), stem(3:-1:0,Q2)
+% xlabel('HH=3, HT=2, TH=1, TT=0'), ylabel('Counts'), title('Q2 Results by Counts')
+% subplot(3,1,3), stem(7:-1:0,Q3)
+% xlabel('HHH=7, ... TTT=0'), ylabel('Counts'), title('Q3 Results by Counts')
+% 
+% figure % Q1-3 - counts of relative frequency estimated probabilities of outcomes
+% subplot(3,1,1), stem([1,0],Q1/NumT)
+% xlabel('Heads = 1, Tails = 0'), ylabel('Est. Prob'), title('Q1 Results by Relative Frequency Probabilities')
+% subplot(3,1,2), stem(3:-1:0,Q2/NumT)
+% xlabel('HH=3, HT=2, TH=1, TT=0'), ylabel('Est. Prob'), title('Q2 Results by Relative Frequency Probabilities')
+% subplot(3,1,3), stem(7:-1:0,Q3/NumT)
+% xlabel('HHH=7, ... TTT=0'), ylabel('Est. Prob'), title('Q3 Results by Relative Frequency Probabilities')
 
 figure % Q4
 subplot(3,1,1), stem([0,1,2,3,4,5],Q4)
